@@ -1,0 +1,91 @@
+body{
+  background: linear-gradient(cyan,rgb(113, 185, 233));
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+article{
+    padding: 20px; 
+    width: 74%;
+    height: 500px;
+    float: left;
+  }
+  #h1{
+    margin-left:50px;width:57px;position:absolute;margin-top: 26px;
+  }
+  aside {
+      height: 500px;
+      width: 20%;
+       padding: 20px;
+       float: left;
+  }
+  .aside_div{
+    border: 2px solid black;
+     height: 50px;
+     width:50px;
+     margin-top: 30px;
+     margin-left: 80px;
+  }
+  .article_first_div{
+     width: 100px;
+     height: 400px;
+     float: left;
+  }
+  .article_first_div div{
+    height: 50px;
+    width:50px;
+     border:2px solid black;
+    margin:  57px 20px;
+  }
+  .article_mainDiv{
+      float: left;
+      width: 300px;
+     height: 400px;
+     color: white;
+  }
+  .article_second_div{
+    width: 100px;
+    height: 400px;
+    float: left;
+ }
+ .article_second_div div{
+    height: 50px;
+    width:50px;
+    border:2px solid black;
+    margin:  57px 20px;
+  }
+ .article_subDiv1 div{
+     height: 30px;
+     width:30px;
+     background-color: rgb(51, 49, 145);
+     text-align: center;
+     border-radius: 20px;
+     margin:  70px 30px;
+ }
+ .article_subDiv2 div{
+    height: 30px;
+    width:30px;
+     background-color: rgb(51, 49, 145);
+     text-align: center;
+    border-radius: 20px;
+    margin:  70px 30px;
+}
+.article_third_div{
+    width: 400px;
+    height: 350px;
+    background-color: rgb(25, 107, 155);
+    box-shadow: 5px 5px rgb(46, 45, 45);
+    float: right;
+    color: white;
+}
+hr{background-color: black}
+.button{
+  margin-top: 400px;
+  height: 30px;
+  border-radius: 8px;
+  width:80px;
+}
+.button:hover{
+  background-color: blueviolet;
+}

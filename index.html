@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/drag&drop.css">   
+    <script src="JS/drag&drop.js"></script> 
+</head>
+<body>
+    <header><h1>Drag and Drop</h1></header>
+    <aside id="drag">
+        <div class="aside_div"><img src="image/nature.jpeg" style="height: 50px;width: 50px" ondragstart="dragStart(event)"  draggable="true" id="img1"></div>
+        <div class="aside_div"><img src="image/nature2.jpeg" style="height: 50px;width: 50px" ondragstart="dragStart(event)" draggable="true" id="img2"></div>
+        <div class="aside_div"><img src="image/nature3.jpg" style="height: 50px;width: 50px" ondragstart="dragStart(event)"  draggable="true" id="img3"></div>
+        <div class="aside_div"><img src="image/nature4.jpg" style="height: 50px;width: 50px" ondragstart="dragStart(event)"  draggable="true" id="img4"></div>
+    </aside>
+    <article>
+        <div class="article_first_div">
+         <div ondrop="ondropfun(event,'P1','hr1')" ondragover="allowDrop(event)"><hr id="hr1" style="margin-left:50px;width:57px;position:absolute;margin-top: 26px;display: none"/></div>
+         <div ondrop="ondropfun(event,'P2','hr2')" ondragover="allowDrop(event)"><hr id="hr2" style="margin-left:50px;width:57px;position: absolute;margin-top: 18px;display: none"/></div>
+         <div ondrop="ondropfun(event,'P3','hr3')" ondragover="allowDrop(event)"><hr id="hr3" style="margin-left:50px;width:57px;position: absolute;margin-top: 10px;display: none"/></div>
+        </div> 
+        <div class="article_mainDiv">
+          <div class="article_subDiv1" style="float: left">
+             <div>P1</div>
+             <div>P2</div>
+             <div>P3</div>
+           </div>
+           <div class="article_subDiv2" style="float: right">
+             <div><hr id="hr4" style="margin-left:20px;width:57px;position:absolute;margin-top: 20px;display: none;"/>P4</div>
+             <div><hr id="hr5" style="margin-left:20px;width:60px;position:absolute;margin-top: 20px;display: none;"/>P5</div>
+             <div><hr id="hr6" style="margin-left:20px;width:57px;position:absolute;margin-top: 20px;display: none;"/>P6</div>
+            </div>
+        </div>
+        <div class="article_second_div">
+            <div ondrop="ondropfun(event,'P4','hr4')" ondragover="allowDrop(event)"></div>
+            <div ondrop="ondropfun(event,'P5','hr5')" ondragover="allowDrop(event)"></div>
+            <div ondrop="ondropfun(event,'P6','hr6')" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="article_third_div" id="result_div" style="display: none;"></div>
+        <button type="submit" onclick="result()" class="button">Submit</button>
+    </article>
+</body>
+</html>
